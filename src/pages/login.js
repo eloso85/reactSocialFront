@@ -6,11 +6,10 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 //mui
 import Grid from '@material-ui/core/Grid';
-import {Typography} from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress'
-
 
 const styles = {
     form: {
@@ -89,12 +88,13 @@ class login extends Component {
         const { errors, loading } = this.state
         return (
             <Grid container className={classes.form}>
-
-                <Grid item sm />
-                <Grid item sm>
-                    <img src={AppIcon} alt="monkey" className={classes.image} />
-                    <Typography variant="h3" className={classes.pageTitle}>Login</Typography>
-                    <form noValidate onSubmit={this.handleSubmit}>
+        <Grid item sm />
+        <Grid item sm>
+          <img src={AppIcon} alt="monkey" className={classes.image} />
+          <Typography variant="h2" className={classes.pageTitle}>
+            Login
+          </Typography>
+          <form noValidate onSubmit={this.handleSubmit}>
             <TextField
               id="email"
               name="email"
@@ -135,16 +135,15 @@ class login extends Component {
               {loading && (
                 <CircularProgress size={30} className={classes.progress} />
               )}
-              </Button>
-              <br />
+            </Button>
+            <br />
             <small>
               dont have an account ? sign up <Link to="/signup">here</Link>
             </small>
-                    </form>
-                </Grid>
-                <Grid item sm />
-            </Grid>
-
+          </form>
+        </Grid>
+        <Grid item sm />
+      </Grid>
         )
     }
 }
