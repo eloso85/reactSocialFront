@@ -3,7 +3,7 @@ import Grid  from '@material-ui/core/Grid'
 import axios from 'axios'
 
 import Scream from '../components/Scream'
-import Profile from '../components/Profile';
+import Profile from '../components/profile/Profile';
 
 export class home extends Component {
     state ={
