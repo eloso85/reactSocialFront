@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Grid  from '@material-ui/core/Grid'
 import axios from 'axios'
 
-import Scream from '../components/Scream'
+import Scream from '../components/scream/Scream'
 import Profile from '../components/profile/Profile';
 
 export class home extends Component {
