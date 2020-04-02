@@ -15,7 +15,7 @@ const styles = (theme) => ({
     height: 20,
     backgroundColor: theme.palette.primary.main,
     width: 60,
-    margin: '0 auto 7px auto'
+    margin: '0 10px 7px auto'
   },
   fullLine: {
     height: 15,
